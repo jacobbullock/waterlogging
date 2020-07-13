@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Fluid" representedClassName="Fluid" syncable="YES">
+        <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="waterBase" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="intakes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Intake" inverseName="fluid" inverseEntity="Intake"/>
+    </entity>
+    <entity name="Goal" representedClassName="Goal" syncable="YES">
+        <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="startDate" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Intake" representedClassName="Intake" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="volume" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="waterVolume" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="fluid" maxCount="1" deletionRule="Nullify" destinationEntity="Fluid" inverseName="intakes" inverseEntity="Fluid"/>
+    </entity>
+    <elements>
+        <element name="Goal" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Intake" positionX="-54" positionY="18" width="128" height="103"/>
+        <element name="Fluid" positionX="-36" positionY="45" width="128" height="103"/>
+    </elements>
 </model>
