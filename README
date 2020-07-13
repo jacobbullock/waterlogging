@@ -1,0 +1,36 @@
+## WaterLogging
+
+## Managed Objects
+`Goal`: I designed goals so that they can have a start and end date. If you update your goal, and the goal's start date is different than today, it will set the current goals' end date to yesterday and create a new goal with a new start date of today.  The idea behind this strategy was to make it so that if other features were added to the app that required us to see how many days a user met their daily goal, we'd want the check to reflect the goal of those specific days. There are some checks to make sure that there can't be two goals with the same start date. 
+
+`Fluid`: I added a `Fluid` entity as part of the enhancement for tracking different types of intake and calculating the total water consumption based on how much water makes up each fluid.  There is currently no methods for adding new `Fluid`s, but the necessary fluids for the enhancement are seeded when the core data stack is configured. 
+
+`Intake`: Intake is used to track the individual entries for a user's fluid consumption.  The intake has a date, amount, volume, and a waterVolume.  In order to make using the database to run various mathematical operations, I figured it'd be better to store the computed water volume since that value wouldn't change, but would need to be calculated every time it was needed and the calculation would have to reach into the `Fluid` relationship
+
+The `Intake` has no direct relationship to a `Goal`. You can add an `Intake` without having set a `Goal` at all.  If we wanted to pull a goal for a specific intake or get all intakes of a specific goal, I think we could use a `FetchedProperty` for that, currently you'd have to pull those values by using dates.
+
+The `Intake` has a required relationship to a `Fluid`.  Technically this relationship doesn't need to be required in the current state of the app because we are calculating the `waterVolume` when we create a new `Intake`, but thinking ahead to other features that might get added in app like this, we might want to see percentage of intakes that were of a specific fluid and the relationship would be needed there.
+
+## Persistence
+For simplicity, I made a singleton (_gasp_) to manage the CoreDataStack. The container can be configured separately for unit testing and the main app.
+There is an extension to seed the database with some `Fluid`s as described in the enhancement for keeping track of different types of drinks.
+
+## Service
+There is a `Service` for each of the Managed Objects described above. The services are instantiated as needed by the view controllers that use them. Each service has a protocol defining the methods and a concrete implementation coupled to core data. The services reaches into the `CoreDataStack` to execute fetch requests as well as basic CRUD on the entities.
+
+## Track
+In the Track ViewController, I added a couple of alerts to allow user entry as well as show some feedback when the user tries to add an intake or update a goal.  There is a simple `BannerNotificationView` that will flash green or red with a message depending if the operation was a success or failure so there is some feedback to the user when submitting the forms.
+
+For updating a goal there is a UIAlertController with a textfield to enter the new value.
+
+For adding an intake I used another UIAlertController and swizzled it give me enough room to add a picker in the view.  This allows the user to select a Fluid and enter the number of ounces consumed. Any respectable dev would have done this by presenting a view controller, but I was trying to be mindful of the allotted time. The other UX I had started for selecting a liquid seemed odd as it was disjointed from entering the number of ounces, so I combined that here. 
+
+## Visualize
+For the Visualization ViewController I updated the data to render every time the user goes to that tab.
+The UI will support a user not having set a daily goal and will instead just show the total number of ounces consumed that day.
+I also added a circular progress bar for some extra flair. 
+
+## Testing
+There are a handful of tests written focused around the service layer.  With more time I would have added more for the ViewControllers to make sure things like the text on the visualization tab was correct and created some other doubles to ensure things like the notification messages were correct.
+
+The CoreDataStack persistent container is setup and torn down for each test.
