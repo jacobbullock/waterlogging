@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160FA67724BA750B00AE21F0 /* IntakeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FA67624BA750B00AE21F0 /* IntakeServiceTests.swift */; };
+		160FA67A24BA7D5E00AE21F0 /* BannerNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FA67924BA7D5E00AE21F0 /* BannerNotificationView.swift */; };
+		160FA67C24BA873600AE21F0 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FA67B24BA873600AE21F0 /* CircularProgressView.swift */; };
+		160FA67E24BCB93D00AE21F0 /* CoreDataStack+Seedable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160FA67D24BCB93D00AE21F0 /* CoreDataStack+Seedable.swift */; };
+		16A8F32B24BA3632000EEB6A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F32A24BA3632000EEB6A /* CoreDataStack.swift */; };
+		16A8F33424BA382D000EEB6A /* Intake+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F32E24BA382D000EEB6A /* Intake+CoreDataClass.swift */; };
+		16A8F33524BA382D000EEB6A /* Intake+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F32F24BA382D000EEB6A /* Intake+CoreDataProperties.swift */; };
+		16A8F33624BA382D000EEB6A /* Fluid+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F33024BA382D000EEB6A /* Fluid+CoreDataClass.swift */; };
+		16A8F33724BA382D000EEB6A /* Fluid+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F33124BA382D000EEB6A /* Fluid+CoreDataProperties.swift */; };
+		16A8F33824BA382D000EEB6A /* Goal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F33224BA382D000EEB6A /* Goal+CoreDataClass.swift */; };
+		16A8F33924BA382D000EEB6A /* Goal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F33324BA382D000EEB6A /* Goal+CoreDataProperties.swift */; };
+		16A8F33B24BA399F000EEB6A /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F33A24BA399F000EEB6A /* UserDefaults.swift */; };
+		16A8F34024BA3E67000EEB6A /* MockPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F33F24BA3E67000EEB6A /* MockPersistentContainer.swift */; };
+		16A8F34224BA4608000EEB6A /* FluidService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F34124BA4608000EEB6A /* FluidService.swift */; };
+		16A8F34624BA48B0000EEB6A /* FluidServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F34524BA48B0000EEB6A /* FluidServiceTests.swift */; };
+		16A8F34824BA4E54000EEB6A /* GoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F34724BA4E54000EEB6A /* GoalService.swift */; };
+		16A8F34A24BA4E62000EEB6A /* IntakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F34924BA4E62000EEB6A /* IntakeService.swift */; };
+		16A8F34C24BA5785000EEB6A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F34B24BA5785000EEB6A /* Date.swift */; };
+		16A8F34E24BA5FFB000EEB6A /* GoalServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8F34D24BA5FFB000EEB6A /* GoalServiceTests.swift */; };
 		B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C724734EAB007708F4 /* AppDelegate.swift */; };
 		B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31AA1C924734EAB007708F4 /* SceneDelegate.swift */; };
 		B31AA1CF24734EAB007708F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31AA1CD24734EAB007708F4 /* Main.storyboard */; };
@@ -30,6 +49,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160FA67624BA750B00AE21F0 /* IntakeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeServiceTests.swift; sourceTree = "<group>"; };
+		160FA67924BA7D5E00AE21F0 /* BannerNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerNotificationView.swift; sourceTree = "<group>"; };
+		160FA67B24BA873600AE21F0 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		160FA67D24BCB93D00AE21F0 /* CoreDataStack+Seedable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataStack+Seedable.swift"; sourceTree = "<group>"; };
+		16A8F32A24BA3632000EEB6A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		16A8F32E24BA382D000EEB6A /* Intake+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intake+CoreDataClass.swift"; sourceTree = "<group>"; };
+		16A8F32F24BA382D000EEB6A /* Intake+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intake+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		16A8F33024BA382D000EEB6A /* Fluid+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fluid+CoreDataClass.swift"; sourceTree = "<group>"; };
+		16A8F33124BA382D000EEB6A /* Fluid+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fluid+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		16A8F33224BA382D000EEB6A /* Goal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		16A8F33324BA382D000EEB6A /* Goal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		16A8F33A24BA399F000EEB6A /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		16A8F33F24BA3E67000EEB6A /* MockPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersistentContainer.swift; sourceTree = "<group>"; };
+		16A8F34124BA4608000EEB6A /* FluidService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidService.swift; sourceTree = "<group>"; };
+		16A8F34524BA48B0000EEB6A /* FluidServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidServiceTests.swift; sourceTree = "<group>"; };
+		16A8F34724BA4E54000EEB6A /* GoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalService.swift; sourceTree = "<group>"; };
+		16A8F34924BA4E62000EEB6A /* IntakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeService.swift; sourceTree = "<group>"; };
+		16A8F34B24BA5785000EEB6A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		16A8F34D24BA5FFB000EEB6A /* GoalServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalServiceTests.swift; sourceTree = "<group>"; };
 		B31AA1C424734EAB007708F4 /* WaterLogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterLogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31AA1C724734EAB007708F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31AA1C924734EAB007708F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +102,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160FA67824BA7D4600AE21F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				160FA67924BA7D5E00AE21F0 /* BannerNotificationView.swift */,
+				160FA67B24BA873600AE21F0 /* CircularProgressView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16A8F32924BA3609000EEB6A /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				16A8F32C24BA363D000EEB6A /* ManagedObjects */,
+				16A8F32A24BA3632000EEB6A /* CoreDataStack.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		16A8F32C24BA363D000EEB6A /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				16A8F32E24BA382D000EEB6A /* Intake+CoreDataClass.swift */,
+				16A8F32F24BA382D000EEB6A /* Intake+CoreDataProperties.swift */,
+				16A8F33024BA382D000EEB6A /* Fluid+CoreDataClass.swift */,
+				16A8F33124BA382D000EEB6A /* Fluid+CoreDataProperties.swift */,
+				16A8F33224BA382D000EEB6A /* Goal+CoreDataClass.swift */,
+				16A8F33324BA382D000EEB6A /* Goal+CoreDataProperties.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		16A8F32D24BA3725000EEB6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				16A8F33A24BA399F000EEB6A /* UserDefaults.swift */,
+				16A8F34B24BA5785000EEB6A /* Date.swift */,
+				160FA67D24BCB93D00AE21F0 /* CoreDataStack+Seedable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		16A8F34324BA47D4000EEB6A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				16A8F34124BA4608000EEB6A /* FluidService.swift */,
+				16A8F34724BA4E54000EEB6A /* GoalService.swift */,
+				16A8F34924BA4E62000EEB6A /* IntakeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		16A8F34424BA47E0000EEB6A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				16A8F34524BA48B0000EEB6A /* FluidServiceTests.swift */,
+				16A8F34D24BA5FFB000EEB6A /* GoalServiceTests.swift */,
+				160FA67624BA750B00AE21F0 /* IntakeServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		B31AA1BB24734EAA007708F4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +184,10 @@
 		B31AA1C624734EAB007708F4 /* WaterLogging */ = {
 			isa = PBXGroup;
 			children = (
+				160FA67824BA7D4600AE21F0 /* View */,
+				16A8F34324BA47D4000EEB6A /* Service */,
+				16A8F32D24BA3725000EEB6A /* Extensions */,
+				16A8F32924BA3609000EEB6A /* Persistence */,
 				B31AA1C724734EAB007708F4 /* AppDelegate.swift */,
 				B31AA1F024734F10007708F4 /* AppTabBarController.swift */,
 				B31AA1C924734EAB007708F4 /* SceneDelegate.swift */,
@@ -102,6 +205,8 @@
 		B31AA1E024734EAC007708F4 /* WaterLoggingTests */ = {
 			isa = PBXGroup;
 			children = (
+				16A8F33F24BA3E67000EEB6A /* MockPersistentContainer.swift */,
+				16A8F34424BA47E0000EEB6A /* Service */,
 				B31AA1E124734EAC007708F4 /* WaterLoggingTests.swift */,
 				B31AA1E324734EAC007708F4 /* Info.plist */,
 			);
@@ -209,11 +314,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160FA67A24BA7D5E00AE21F0 /* BannerNotificationView.swift in Sources */,
+				16A8F34824BA4E54000EEB6A /* GoalService.swift in Sources */,
+				16A8F32B24BA3632000EEB6A /* CoreDataStack.swift in Sources */,
 				B31AA1ED24734EC7007708F4 /* TrackWaterViewController.swift in Sources */,
+				16A8F34224BA4608000EEB6A /* FluidService.swift in Sources */,
+				16A8F33824BA382D000EEB6A /* Goal+CoreDataClass.swift in Sources */,
 				B31AA1EF24734EE8007708F4 /* VisualizeWaterIntakeViewController.swift in Sources */,
+				16A8F33524BA382D000EEB6A /* Intake+CoreDataProperties.swift in Sources */,
+				16A8F34C24BA5785000EEB6A /* Date.swift in Sources */,
+				16A8F34A24BA4E62000EEB6A /* IntakeService.swift in Sources */,
 				B31AA1F124734F10007708F4 /* AppTabBarController.swift in Sources */,
 				B31AA1C824734EAB007708F4 /* AppDelegate.swift in Sources */,
+				16A8F33624BA382D000EEB6A /* Fluid+CoreDataClass.swift in Sources */,
+				16A8F33924BA382D000EEB6A /* Goal+CoreDataProperties.swift in Sources */,
+				16A8F33724BA382D000EEB6A /* Fluid+CoreDataProperties.swift in Sources */,
+				16A8F33424BA382D000EEB6A /* Intake+CoreDataClass.swift in Sources */,
+				160FA67E24BCB93D00AE21F0 /* CoreDataStack+Seedable.swift in Sources */,
 				B31AA1CA24734EAB007708F4 /* SceneDelegate.swift in Sources */,
+				16A8F33B24BA399F000EEB6A /* UserDefaults.swift in Sources */,
+				160FA67C24BA873600AE21F0 /* CircularProgressView.swift in Sources */,
 				B31AA1D224734EAB007708F4 /* WaterLogging.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +342,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A8F34024BA3E67000EEB6A /* MockPersistentContainer.swift in Sources */,
 				B31AA1E224734EAC007708F4 /* WaterLoggingTests.swift in Sources */,
+				16A8F34624BA48B0000EEB6A /* FluidServiceTests.swift in Sources */,
+				16A8F34E24BA5FFB000EEB6A /* GoalServiceTests.swift in Sources */,
+				160FA67724BA750B00AE21F0 /* IntakeServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
